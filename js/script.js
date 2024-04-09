@@ -4,26 +4,7 @@ var typed = new Typed(".typing", {
   BackSpeed: 60,
   loop: true,
 });
-function handleSubmit(event) {
-  // Prevent the default form submission
-  event.preventDefault();
 
-  // Show the success message
-  document.getElementById("success-message").style.display = "block";
-
-  // Optionally, you can submit the form data to Netlify
-  const form = event.target;
-  fetch(form.action, {
-    method: form.method,
-    body: new FormData(form),
-  })
-    .then((response) => {
-      // Handle the response as needed
-    })
-    .catch((error) => {
-      // Handle errors if any
-    });
-}
  window.addEventListener("DOMContentLoaded", (event) => {
    const navbarLinks = document.querySelectorAll(".nav li a");
    const homeLink = document.querySelector('.nav li a[href="#home"]');
