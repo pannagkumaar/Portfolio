@@ -6,6 +6,7 @@ const ctx = canvas.getContext("2d");
 let canvasWidth = window.innerWidth;
 let canvasHeight = window.innerHeight;
 let columns = Math.floor(canvasWidth / 20);
+// console.log("current number of columns:"+columns);
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
@@ -28,6 +29,8 @@ window.addEventListener("wheel", (event) => {
 
     // Update the number of columns based on the canvas width after zooming
     columns = Math.floor(canvasWidth / 20);
+    // console.log("current number of columns:" + columns);
+
     yPositions.length = columns;
   }
 });
@@ -90,8 +93,9 @@ function updateMatrix() {
   ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
   // Set the text color and font
-  ctx.fillStyle = "red";
-  ctx.font = "12px timesnewroman";
+  ctx.fillStyle = "rgba(255, 0, 0, 1)";
+
+  ctx.font = "13px timesnewroman";
 
   // Loop through each column
   for (let i = 0; i < columns; i++) {
@@ -107,6 +111,7 @@ function updateMatrix() {
     // Move the column down by 20 units
     yPositions[i] += 20;
 
+    
     // Reset the position if it reaches the bottom of the canvas
     if (yPositions[i] > canvasHeight && Math.random() > 0.98) {
       yPositions[i] = 0;
