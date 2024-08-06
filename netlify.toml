@@ -1,5 +1,5 @@
 [[redirects]]
     from = "/*"
-    to = "https://pannagkumaar.live"
+    to = "https://pannagkumaar.live/:splat"
     status = 301
     force = true
