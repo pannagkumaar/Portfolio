@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "https://pannagkumaar.netlify.app/*"
+  to = "https://pannagkumaar.live/:splat"
+  status = 301
+  force = true
+  conditions = { Host = "pannagkumaar.netlify.app" }
