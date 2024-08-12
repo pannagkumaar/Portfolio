@@ -1,0 +1,33 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://pannagkumaar.live/</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://pannagkumaar.live/#home</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://pannagkumaar.live/#about</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://pannagkumaar.live/#education</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://pannagkumaar.live/#contact</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>0.80</priority>
+    </url>
+   
+    <url>
+        <loc>https://pannagkumaar.live/PannagKumaar.pdf</loc>
+        <lastmod>2024-08-12</lastmod>
+        <priority>0.64</priority>
+    </url>
+</urlset>
