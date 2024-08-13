@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style-switcher.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/hacker.png" />
-
+  <script src ="js/hackerText.js"></script>
 </head>
 
 <body class="dark">
@@ -88,10 +88,32 @@
             <div class="about-content padd-15">
               <div class="row">
                 <div class="about-text padd-15">
-                  <h3>I'm <span> Pannag Kumaar&nbsp;&nbsp;</span></h3>
+                  <h3>I'm <span id="hacked" data-text="Pannag Kumaar" > Pannag Kumaar&nbsp;&nbsp;</span></h3>
+                 <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                          const aboutSection = document.getElementById('about');
+                          const observerOptions = {
+                            root: null, // Use the viewport as the root
+                            rootMargin: '0px',
+                            threshold: 0.1 // Trigger when 10% of the section is visible
+                          };
+
+                          const observer = new IntersectionObserver(function(entries, observer) {
+                            entries.forEach(entry => {
+                              if (entry.isIntersecting) {
+                                Init("hacked", 5,15);
+                              }
+                            });
+                          }, observerOptions);
+
+                          observer.observe(aboutSection);
+                        });
+                      </script>
+
                   <p>
-                    This is about me :)
+                    Welcome to my portfolio! I'm specialized in ethical hacking methodologies. I possess extensive knowledge of penetration testing, vulnerability assessment, and security auditing. My goal is to identify and address potential vulnerabilities before malicious actors can exploit them.
                   </p>
+                  
                 </div>
               </div>
               <div class="row">
@@ -385,6 +407,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
+   
   
 
 </body>
